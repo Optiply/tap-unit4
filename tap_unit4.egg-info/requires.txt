@@ -1,0 +1,8 @@
+poetry-core
+hotglue-singer-sdk
+backoff<2.0,>=1.8.0
+requests>=2.31.0
+
+[test]
+pytest>=7
+requests-mock>=1.11

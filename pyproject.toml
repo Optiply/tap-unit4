@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tap-unit4"
+version = "0.1.0"
+description = "Unit4 Wholesale tap for Optiply using hotglue_singer_sdk"
+authors = [{ name = "Optiply", email = "dev@optiply.com" }]
+requires-python = ">=3.9,<3.11"
+dependencies = [
+    "poetry-core",
+    "hotglue-singer-sdk",
+    "backoff>=1.8.0,<2.0",
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "requests-mock>=1.11"]
+
+[project.scripts]
+tap = "tap_unit4.tap:TapUnit4.cli"
+tap-unit4 = "tap_unit4.tap:TapUnit4.cli"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tap_unit4*"]

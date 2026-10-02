@@ -1,0 +1,3 @@
+[console_scripts]
+tap = tap_unit4.tap:TapUnit4.cli
+tap-unit4 = tap_unit4.tap:TapUnit4.cli

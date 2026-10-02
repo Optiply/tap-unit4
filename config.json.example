@@ -1,0 +1,12 @@
+{
+  "base_url": "https://unit4.example.com",
+  "environment": "your-environment",
+  "administration": "01",
+  "username": "api-user",
+  "password": "your-password",
+  "start_date": "2026-09-01T00:00:00Z",
+  "sell_order_lookback_days": 1,
+  "sell_order_statuses": "A,Z,O",
+  "purchase_order_statuses": "O,B",
+  "page_size": 100
+}
